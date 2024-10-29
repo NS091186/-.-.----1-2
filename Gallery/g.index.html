@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="g.skript.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon\favicon-16x16.png">
+    <link rel="manifest" href="../favicon\site.webmanifest">
+</head>
+<body class="body">
+   
+    <header>
+        <img class="logo"   src="C:\Users\Homr\OneDrive\Рабочий стол\Веб разработка\html\final progect\logo32.png"  alt="Logo">
+       
+        <div class="burger-menu">
+          <div class="burger-icon" id="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../Article/a.index.html">Статьи</a></li>
+                <li><a href="../News/n.index.html">События</a></li>
+                <li><a href="../Contacts/cont.index.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        </header>
+    <main>
+        <a href="C:\Users\Homr\OneDrive\Рабочий стол\Веб разработка\html\final progect\index.html">ГЛАВНАЯ</a><br><br>
+        <div class="carousel">
+            <button class="carousel-button next" onclick="onNext()">
+                &#187; 
+            </button>
+            <button class="carousel-button prev" onclick="onPrev()">
+                &#171;
+            </button>		
+            <ul class="slides">
+                <li class="slide" data-active>
+                    <img src="Ivolga.webp" width="60%" alt="Ivolga #1" />
+                </li>
+                <li class="slide">
+                    <img src="Sapsan.webp" width="60%"  alt="Sapsan #2" />
+                </li>
+                <li class="slide">
+                    <img src="Lastachka.webp" width="60%"   alt="Lastachka #3" />
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+
+</body>
+</html>
