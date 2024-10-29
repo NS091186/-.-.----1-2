@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="home.style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
+    <link rel="manifest" href="favicon\site.webmanifest">
+
+</head>
+<body class="body">
+   
+    <header>
+        <img class="logo"   src="logo32.png" width="" alt="Logo">
+       
+        <div class="burger-menu">
+          <div class="burger-icon" id="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu">
+            <ul>
+              <li><a href="News/n.index.html">События</a></li>
+              <li><a href="Article/a.index.html">Статьи</a></li>
+              <li><a href="Gallery/g.index.html">Фотогалерея</a></li>
+              <li><a href="Contacts/cont.index.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        </header>
+    <main id="main">
+      <a href="index.html">ГЛАВНАЯ</a><br><br>
+    <section id="Home" class = "Home-section"> 
+    <div class="Hello">
+    <h1 class="zagolovok">Добро пожаловать <br>на веб-портал о железнодорожном транспорте "About Trains"!</h1><img class="logo"   src="logo.png" width="20%" alt="Logo">
+    <p class="paragraf">  Меня зовут Демид  и я увлекаюсь железнодорожным транспортом и на данном сайте я буду делиться с вами интересными фактами, событиями и историей железнодорожного транспорта. 
+     <br> <a href="News\n.index.html"> Узнать больше</a>
+      
+      <br><br> В форме приведенной ниже вы можете зарегистрироваться, чтобы быть в курсе новых публикаций.
+    </p>
+    
+  </div>
+</section>
+
+<div class="registr">
+  <h2>Форма регистрации</h2> <br>
+<form id="main-form" onsubmit="return checkForm(this)" method="post">
+  <label for="name"> Имя:</label>
+  <input type="text" name="name" placeholder="Имя" id="name"><br><br>
+  <label for="password"> Пароль:</label>
+  <input type="password" name="pass" placeholder="Пароль" id="pass"><br><br>
+  <label for="repass"> Проверка пароля:</label>
+  <input type="password" name="repass" placeholder="Проверка пароля" id="repass"><br><br>
+  <span>Пол:</span>
+  <input type="radio" name="state" id="male" value="Мужской">
+  <label for="male">Мужской</label>
+  <input type="radio" name="state" id="female" value="Женский">
+  <label for="female">Женский</label><br><br>
+  <span id="error" style="color: red"></span>
+  <input type="submit" name="submit" value="Готово">
+
+</form>
+</div>
+    </main>
+
+<footer>
+    <p>&copy; 2024</p>
+</footer>
+<script src="home.skript.js"></script>
+</body>
+</html>

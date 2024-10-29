@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+                              
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(252, 251, 251);
+    color: #141616;
+    line-height: 30px;
+    background-image: url(фон.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+  
+  header {
+    width: auto;
+    background-color: rgb(92, 93, 97);
+    color: beige;
+    padding: 1rem;
+}
+
+.block {
+  width: 100%;
+  margin: 0;
+  
+}
+.block:before {
+content: none;
+display: block;
+height: 70px;
+width: 100%;
+position: sticky;
+left: 0;
+background: #000;
+}
+.block_ul_li {
+ padding: 30px;
+  left: 100px;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  
+}
+.block_ul_li a:hover {
+background-color: rgb(230, 230, 222);
+transition: width 1ms, height 1ms, background-color 1ms; /* Задаем переход для нескольких свойств */ 
+border-radius: 10%;
+color: #474742;
+
+}
+
+nav ul li a {
+  color: beige;
+  text-decoration:underline;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+
+
+.menu.active {
+  display: block;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 20px;
+  left: 50px;;
+  width: 910px;
+  height: 100vh;
+  
+  z-index: 1;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger-icon span {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+/* Скрываем меню по умолчанию */
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Анимация для открытия меню */
+.menu.open {
+  display: block;
+}
+
+  
+/*Обратная связь*/
+main {
+    padding: 40px 40px;
+  }
+
+  .Hello {
+    font-size: medium;
+    max-width:500pt;
+    margin: 30px;;
+    padding: 10px;;
+    background-color: #fcfbf8;
+    border-radius: 8px;
+    box-shadow:0 0 20px #494949;
+  }
+  .paragraf {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .registr {
+    max-width: 400px;
+    max-height: fit-content;
+    margin: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #3d3d3d;;
+  }
+  
+
+  
+  footer {
+    text-align: center;
+    min-height: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
