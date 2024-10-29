@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События</title>
+    <link rel="stylesheet" href="n.style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon\favicon-16x16.png">
+    <link rel="manifest" href="../favicon\site.webmanifest">
+</head>
+<body class="body">
+   
+    <header>
+        <img class="logo"   src="C:\Users\Homr\OneDrive\Рабочий стол\Веб разработка\html\final progect\logo32.png"  alt="Logo">
+       
+        <div class="burger-menu">
+          <div class="burger-icon" id="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../Article\a.index.html">Статьи</a></li>
+                <li><a href="../Gallery/g.index.html">Фотогалерея</a></li>
+                <li><a href="../Contacts/cont.index.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        </header>
+        <main>
+          <a href="C:\Users\Homr\OneDrive\Рабочий стол\Веб разработка\html\final progect\index.html">ГЛАВНАЯ</a><br><br>
+          <div class="news1">
+          <h2>06/09/2024<br>
+            В Москве прошел форум-фестиваль "Москва 2030", где представили проект новой схемы метро <br><a href="#"> Далее</a></h2>
+          <img src="n1.jpg" width="40%"    alt="Москва 2030">
+        </div>
+<div class="news2">
+  <h2>01/09/2024<br>
+    На линии МЦД вышел поезд нового поколения «Иволга 4.0»  <br><a href="#"> Далее</a></h2>
+  <img src="n2.jpg" width="40%"    alt="Иволга 4.0">
+</div>
+
+        </main>
+<footer>
+  <p>&copy; 2024</p>
+</footer>
+
+
+       <script>
+        console.log('Скрипт загружен');
+
+const burgerMenu = document.querySelector('.burger-menu');
+const menu = document.querySelector('.menu');
+burgerMenu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});</script> 
+        <script src="n.skript.js"></script>
+</body>
+</html>
