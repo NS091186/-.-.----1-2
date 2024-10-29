@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="cont.index.css">
+    <script src="cont.skript.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon\favicon-16x16.png">
+    <link rel="manifest" href="../favicon\site.webmanifest">
+</head>
+  <body class="body">
+     
+      <header>
+          <img class="logo"   src="C:\Users\Homr\OneDrive\Рабочий стол\Веб разработка\html\final progect\logo32.png" alt="Logo">
+         
+          <div class="burger-menu">
+            <div class="burger-icon" id="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <nav class="menu">
+              <ul>
+                  <li><a href="../index.html">Главная</a></li>
+                  <li><a href="../Article\a.index.html">Статьи</a></li>
+                  <li><a href="../News/n.index.html">События</a></li>
+                  <li><a href="../Gallery/g.index.html">Фотогалерея</a></li>
+                 
+              </ul>
+            </nav>
+          </div>
+          </header>
+    <main id="main">
+      <a href="C:\Users\Homr\OneDrive\Рабочий стол\Веб разработка\html\final progect\index.html">ГЛАВНАЯ</a><br><br>
+<section class="contact-info">
+    <div class="contact-item">
+      <h2>Почта</h2>
+      <p>
+        <a href="d262426@yandex.ru">d.makov.ru</a>
+      </p>
+    </div>
+
+    <div class="contact-item">
+      <h2>ВКонтакте</h2>
+      <p>
+        <a href="https://vk.com/mak2015" target="_blank"
+          >vk.com/mak2015</a
+        >
+      </p>
+    </div>
+
+    <div class="contact-item">
+      <h2>Telegram</h2>
+      <p>
+        <a href="https://t.me/NatMak86" target="_blank">@NatMak86</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <h2>Оставить заявку на сотрудничество</h2>
+    <form
+      action="send_message.php"
+      method="POST"
+      id="contactForm"
+      target="_blank"
+    >
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+</main id="main_footer">
+
+<footer>
+    <p>&copy; 2024</p>
+</footer>
+
+</body>
+</html>
